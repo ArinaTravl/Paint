@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body>
+    <p class="text">Your Painter</p>
+    <div class="changeColor">
+        <pre class="txt">
+                                </pre>
+        <div class="first">
+            <div class="col1">
+                  <canvas id="canvas" width="800" height="600"></canvas>
+            </div>
+          
+
+            <div class="col2">
+                  
+
+                   
+                
+                <div class="row1">
+                      <div id="r" class="col" onclick="changeColor('#B22222')"> <p class="cl">red</p> </div>
+                        <div id="b" class="col" onclick="changeColor('#1E90FF')"> <p class="cl">blue</p> </div>
+                        <div id="g" class="col" onclick="changeColor('#00FF7F')"> <p class="cl">green</p></div>
+                        <div id="o" class="col" onclick="changeColor('#FF8C00')"> <p class="cl">orange </p> </div>
+                        <div id="p" class="col" onclick="changeColor('#FF69B4')"> <p class="cl">pink</p> </div>
+                       
+                        <div id="l" class="col" onclick="changeColor('white')"> 
+                            <img src="https://cdn-icons-png.flaticon.com/512/43/43279.png" alt="Ластик" height="100px" width="100px">
+                        </div>
+                        
+                    </div>
+                <div class="row2">
+                     <div id="gl" class="col" onclick="changeColor('#FFD700')"> <p class="cl">gold</p> </div>
+                    <div id="or" class="col" onclick="changeColor('#9932CC')"> <p class="cl">orchid</p> </div>
+                    <div id="br" class="col" onclick="changeColor('#8B4513')"> <p class="cl">brown</p> </div>
+                    <div id="si" class="col" onclick="changeColor('#C0C0C0')"> <p class="cl">silver</p> </div>
+                    <div id="mb" class="col" onclick="changeColor('#0000CD')"> <p class="cl">MediumBlue</p> </div>
+                    <div id="phantom" class="col"></div>
+                  
+
+                    <div id="palette_container">
+                        <input id="palette" type="color">
+                       </div>
+
+                </div>
+
+
+
+                    <div class="row3">
+
+                        <div>
+                        <p>Change brush size</p>
+                        <input id="brush" type="range" min="1" max="100" step="1" value="10"> 
+                        </div>
+
+                        <div class="shape">
+                            <p>Change brush shape </p>
+                            <div id="round"></div> 
+                            <div id="square"></div>
+                           
+                        </div>
+                    </div>
+            </div>
+        </div>  
+                   
+
+    </div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
